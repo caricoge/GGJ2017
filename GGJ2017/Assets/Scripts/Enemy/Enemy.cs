@@ -12,11 +12,12 @@ public class Enemy : MonoBehaviour {
 	void Start () {
 
 		nav_mesh = GetComponent<NavMeshAgent> ();
-		nav_mesh.SetDestination (transform.position);
+		Debug.Log (nav_mesh);
 	}
 	
 	// Update is called once per frame
 	void Update () {
+		nav_mesh.SetDestination (target.position);
 
 
 	}
