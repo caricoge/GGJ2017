@@ -82,7 +82,7 @@ public class Player : MonoBehaviour {
 		// Left mouse button 
 		if (Input.GetButtonDown("Fire1")) {
 
-			if (!startSparkTimer && !startHaloTimer && !IsAfraid()) {
+			if (!startHaloTimer && !IsAfraid()) {
 				//  Instantiate light object
 				Quaternion start_rot = Quaternion.Euler (new Vector3 (90, 0, 0));
 				Light halo_light = Instantiate (halo_prefab, transform.position +new Vector3(0,5,0), start_rot);
