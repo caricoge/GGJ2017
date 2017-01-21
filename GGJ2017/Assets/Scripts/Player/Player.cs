@@ -8,6 +8,8 @@ public class Player : MonoBehaviour {
 
 	bool hasKey = false;
 
+	Animator animator;
+
 	// Big Halo cooldown
 	public float waitHaloTime = 3f;
 	private float haloTimeLeft;
@@ -20,6 +22,14 @@ public class Player : MonoBehaviour {
 	void Start () {
 
 		haloTimeLeft = waitHaloTime;
+
+		Animator[] animators = GetComponentsInChildren<Animator> ();
+		/*
+		foreach (Animator a in animator) 
+		{
+
+		}
+		*/
 
 	}
 	// Update is called once per frame
