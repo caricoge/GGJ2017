@@ -12,13 +12,28 @@ public class Enemy : MonoBehaviour {
 	void Start () {
 
 		nav_mesh = GetComponent<NavMeshAgent> ();
-		Debug.Log (nav_mesh);
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		nav_mesh.SetDestination (target.position);
+
+		if (target.GetComponent<Player> ().justClapped) {
+			nav_mesh.Resume ();
+			nav_mesh.SetDestination (target.position);
+			Debug.Log ("go");
+		}
 
 
+		
+	}
+
+	void OnTriggerEnter(Collider collision)
+	{
+		Debug.Log (collision.gameObject.tag);
+		if(collision.gameObject.tag == "lightRay")
+		{
+			nav_mesh.Stop ();
+			Debug.Log ("Stop");
+		}
 	}
 }

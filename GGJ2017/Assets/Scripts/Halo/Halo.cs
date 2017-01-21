@@ -9,6 +9,8 @@ public class Halo : MonoBehaviour {
 	Light halo_light;
 	public float speed = 1f;
 
+	SphereCollider lightTrigger;
+
 	//Destroy timer
 	public float waitDestroyTime = 1f;
 	private float destroyTimeLeft;
@@ -25,6 +27,13 @@ public class Halo : MonoBehaviour {
 		destroyTimeLeft = waitDestroyTime;
 
 		player = FindObjectOfType<Player> ().transform;
+
+		lightTrigger = GetComponentInChildren<SphereCollider> ();
+		Vector3 pos = lightTrigger.transform.position;
+		pos.y = 0;
+		lightTrigger.transform.position = pos;
+
+
 	}
 	
 	// Update is called once per frame
@@ -40,6 +49,8 @@ public class Halo : MonoBehaviour {
 	*/
 		//enlarge halo over time
 		halo_light.spotAngle += speed;
+		lightTrigger.radius += speed/100;
+
 
 		//Start counting before destroy
 		if (startDestroyTimer)
