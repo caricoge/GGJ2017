@@ -3,17 +3,17 @@
 -nowarn:0169
 -langversion:4
 -out:Temp/Assembly-CSharp.dll
--r:D:/UNITY5/Editor/Data/Managed/UnityEngine.dll
+-r:"C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll"
 -r:Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll
--r:D:/UNITY5/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll
--r:D:/UNITY5/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll
--r:D:/UNITY5/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll
--r:D:/UNITY5/Editor/Data/UnityExtensions/Unity/PlaymodeTestsRunner/UnityEngine.PlaymodeTestsRunner.dll
--r:D:/UNITY5/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll
--r:D:/UNITY5/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll
--r:D:/UNITY5/Editor/Data/UnityExtensions/Unity/UnityPurchasing/UnityEngine.Purchasing.dll
--r:D:/UNITY5/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll
--r:D:/UNITY5/Editor/Data/Managed/UnityEditor.dll
+-r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll"
+-r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll"
+-r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll"
+-r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/PlaymodeTestsRunner/UnityEngine.PlaymodeTestsRunner.dll"
+-r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll"
+-r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll"
+-r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityPurchasing/UnityEngine.Purchasing.dll"
+-r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll"
+-r:"C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll"
 -define:UNITY_5_3_OR_NEWER
 -define:UNITY_5_4_OR_NEWER
 -define:UNITY_5_5_OR_NEWER
@@ -80,14 +80,16 @@
 -define:UNITY_EDITOR_WIN
 -define:UNITY_TEAM_LICENSE
 -define:CROSS_PLATFORM_INPUT
+Assets/LogosSlideshow/Scripts/GUI/SlideShow.cs
+Assets/LogosSlideshow/Scripts/GUI/TextureFullScreen.cs
 Assets/MaxP/Shaders/Scripts/DirtyLensFlare.cs
 Assets/Scripts/CameraEffect.cs
 Assets/Scripts/Enemy/Enemy.cs
 Assets/Scripts/Halo/Halo.cs
 Assets/Scripts/Player/Player.cs
--r:D:\UNITY5\Editor\Data\MonoBleedingEdge\lib\mono\unity\System.Runtime.Serialization.dll
--r:D:\UNITY5\Editor\Data\MonoBleedingEdge\lib\mono\unity\System.Xml.Linq.dll
--r:D:\UNITY5\Editor\Data\MonoBleedingEdge\lib\mono\unity\UnityScript.dll
--r:D:\UNITY5\Editor\Data\MonoBleedingEdge\lib\mono\unity\UnityScript.Lang.dll
--r:D:\UNITY5\Editor\Data\MonoBleedingEdge\lib\mono\unity\Boo.Lang.dll
+-r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\unity\System.Runtime.Serialization.dll"
+-r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\unity\System.Xml.Linq.dll"
+-r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\unity\UnityScript.dll"
+-r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\unity\UnityScript.Lang.dll"
+-r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\unity\Boo.Lang.dll"
 -sdk:unity
