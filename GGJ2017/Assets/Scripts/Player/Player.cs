@@ -6,6 +6,7 @@ public class Player : MonoBehaviour {
 
 	public Light halo_prefab;
 
+	bool hasKey = false;
 
 	// Big Halo cooldown
 	public float waitHaloTime = 3f;
