@@ -6,6 +6,8 @@ public class CameraEffect : MonoBehaviour {
 
 
 	public Animator cameraanimator;
+	public Animator playeranimator;
+
 //	public GameObject Enemy;
 	// Use this for initialization
 	void Start () {
@@ -23,6 +25,8 @@ public class CameraEffect : MonoBehaviour {
 		{ 
 			print("ca pue");
 			cameraanimator.SetBool("Enter", true);
+			playeranimator.SetBool("FEAR", true);
+
 		}
 	}
 	void OnTriggerExit( Collider theCollision )
@@ -33,6 +37,8 @@ public class CameraEffect : MonoBehaviour {
 		{ 
 			print("ouf");
 			cameraanimator.SetBool("Enter", false);
+			playeranimator.SetBool("FEAR", false);
+
 		}
 	}
 }
