@@ -17,7 +17,7 @@ public class CameraEffect : MonoBehaviour {
 	}
 	void Update(){
 
-		if(Input.GetButton("Fire2")){
+		if(Input.GetButtonDown("Fire2")){
 			playeranimator.SetBool("Fire2",true);
 
 		}
@@ -26,6 +26,23 @@ public class CameraEffect : MonoBehaviour {
 			playeranimator.SetBool("Fire2",false);
 
 		}
+		if(Input.GetButtonDown("Fire1")){
+			playeranimator.SetBool("Fire1",true);
+		}
+		else {
+
+			playeranimator.SetBool("Fire1",false);
+
+		}
+		if(Input.GetKeyDown("e")){
+			playeranimator.SetBool("Grab",true);
+		}
+		else {
+
+			playeranimator.SetBool("Grab",false);
+
+		}
+
 	}
 	
 	// Update is called once per frame
