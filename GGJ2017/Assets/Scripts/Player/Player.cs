@@ -5,6 +5,7 @@ using UnityEngine;
 public class Player : MonoBehaviour {
 
 	public Light halo_prefab;
+	public Light spark_prefab;
 
 	bool hasKey = false;
 
@@ -71,7 +72,7 @@ public class Player : MonoBehaviour {
 
 			//End of Spark Cooldown
 			if (sparkTimeLeft < 0) {
-				Debug.Log ("eeeeeeee");
+
 				sparkTimeLeft = waitSparkTime;
 				startSparkTimer = false;
 				animator.SetBool ("SparkCoolDown",false);
@@ -91,19 +92,53 @@ public class Player : MonoBehaviour {
 			}
 		}
 
+		// SPARK
 		if (Input.GetButtonDown ("Fire2")) {
 
 			if (!startSparkTimer) {
 				//  Instantiate light object
 				Quaternion start_rot = Quaternion.Euler (new Vector3 (90, 0, 0));
-				Light halo_light = Instantiate (halo_prefab, transform.position + new Vector3 (0, 5, 0), start_rot);
+				Light halo_light = Instantiate (spark_prefab, transform.position + new Vector3 (0, 5, 0), start_rot);
 				Debug.Log (startSparkTimer);
 
 				startSparkTimer = true;
 				justSnapped = true;
-
 			}
 		}
 
 	}
+
+	void OnTriggerEnter(Collider collision)
+	{
+		if (collision.gameObject.tag == "key") {
+			
+			animator.SetBool ("CanGrab", true);
+
+		}
+	}
+
+	void OnTriggerStay(Collider collision)
+	{
+		if (collision.gameObject.tag == "key") {
+
+			if (Input.GetKeyDown (KeyCode.E)) {
+				hasKey = true;
+				Destroy (collision.gameObject);
+			}
+		}
+	}
+
+	void OnTriggerExit(Collider collision)
+	{
+		if (collision.gameObject.tag == "key") {
+			animator.SetBool ("CanGrab", false);
+		}
+	}
+
+	public bool HasKey()
+	{
+		return hasKey;
+	}
+
+
 }
