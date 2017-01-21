@@ -30,7 +30,7 @@ public class Door : MonoBehaviour {
 				Debug.Log ("Player");
 				Player player = coll.GetComponent<Player> ();
 
-				if (player.HasKey ()) {
+				if (player.HasKey () && !player.IsAfraid()) {
 					open = true;
 				}
 			}

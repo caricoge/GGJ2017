@@ -82,7 +82,7 @@ public class Player : MonoBehaviour {
 		// Left mouse button 
 		if (Input.GetButtonDown("Fire1")) {
 
-			if (!startHaloTimer) {
+			if (!startSparkTimer && !startHaloTimer && !IsAfraid()) {
 				//  Instantiate light object
 				Quaternion start_rot = Quaternion.Euler (new Vector3 (90, 0, 0));
 				Light halo_light = Instantiate (halo_prefab, transform.position +new Vector3(0,5,0), start_rot);
@@ -95,7 +95,7 @@ public class Player : MonoBehaviour {
 		// SPARK
 		if (Input.GetButtonDown ("Fire2")) {
 
-			if (!startSparkTimer) {
+			if (!startSparkTimer && !startHaloTimer && !IsAfraid()) {
 				//  Instantiate light object
 				Quaternion start_rot = Quaternion.Euler (new Vector3 (90, 0, 0));
 				Light halo_light = Instantiate (spark_prefab, transform.position + new Vector3 (0, 5, 0), start_rot);
@@ -121,7 +121,7 @@ public class Player : MonoBehaviour {
 	{
 		if (collision.gameObject.tag == "key") {
 
-			if (Input.GetKeyDown (KeyCode.E)) {
+			if (Input.GetKeyDown (KeyCode.E) && !IsAfraid()) {
 				hasKey = true;
 				Destroy (collision.gameObject);
 			}
@@ -133,6 +133,11 @@ public class Player : MonoBehaviour {
 		if (collision.gameObject.tag == "key") {
 			animator.SetBool ("CanGrab", false);
 		}
+	}
+
+	public bool IsAfraid()
+	{
+		return animator.GetBool ("FEAR");
 	}
 
 	public bool HasKey()
