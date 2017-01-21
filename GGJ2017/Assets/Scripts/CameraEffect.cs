@@ -15,6 +15,18 @@ public class CameraEffect : MonoBehaviour {
 
 
 	}
+	void Update(){
+
+		if(Input.GetButton("Fire2")){
+			playeranimator.SetBool("Fire2",true);
+
+		}
+		else {
+
+			playeranimator.SetBool("Fire2",false);
+
+		}
+	}
 	
 	// Update is called once per frame
 	void OnTriggerEnter( Collider theCollision )
