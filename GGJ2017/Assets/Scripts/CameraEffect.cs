@@ -17,7 +17,7 @@ public class CameraEffect : MonoBehaviour {
 	}
 	void Update(){
 
-		if(Input.GetButtonDown("Fire2")){
+		if(Input.GetButton("Fire2")){
 			playeranimator.SetBool("Fire2",true);
 
 		}
