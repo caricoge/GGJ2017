@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/TestInte.unity
+=======
+- path: Assets/scene_antoine.unity
+>>>>>>> dbea97d0299f4c945646c51d678b50413e0282db
   isLoaded: 1
   isActive: 1
