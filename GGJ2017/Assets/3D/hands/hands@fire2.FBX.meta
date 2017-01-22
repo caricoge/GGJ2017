@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: f11b19597bdb01748847690ee83e2315
-timeCreated: 1485006264
+timeCreated: 1485045506
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -60,7 +60,7 @@ ModelImporter:
     400050: Player_Camera
     400052: RIght_Arm
     4300000: RIght_Arm
-    7400000: fire2
+    7400000: Take 001
     9500000: //RootNode
     13700000: RIght_Arm
   materials:
@@ -83,89 +83,7 @@ ModelImporter:
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations:
-    - serializedVersion: 16
-      name: fire2
-      takeName: Take 001
-      firstFrame: 0
-      lastFrame: 20
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 0
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask:
-      - path: 
-        weight: 1
-      - path: Left_Arm
-        weight: 1
-      - path: Left_Arm/Left_Hand
-        weight: 1
-      - path: Left_Arm/Left_Hand/Left_Finger0
-        weight: 1
-      - path: Left_Arm/Left_Hand/Left_Finger0/Left_Finger01
-        weight: 1
-      - path: Left_Arm/Left_Hand/Left_Finger1
-        weight: 1
-      - path: Left_Arm/Left_Hand/Left_Finger1/Left_Finger11
-        weight: 1
-      - path: Left_Arm/Left_Hand/Left_Finger2
-        weight: 1
-      - path: Left_Arm/Left_Hand/Left_Finger2/Left_Finger21
-        weight: 1
-      - path: Left_Arm/Left_Hand/Left_Finger3
-        weight: 1
-      - path: Left_Arm/Left_Hand/Left_Finger3/Left_Finger31
-        weight: 1
-      - path: Left_Arm/Left_Hand/Left_Finger4
-        weight: 1
-      - path: Left_Arm/Left_Hand/Left_Finger4/Left_Finger41
-        weight: 1
-      - path: Left_Arm(mirrored)
-        weight: 1
-      - path: Left_Arm(mirrored)/Left_Hand(mirrored)
-        weight: 1
-      - path: Left_Arm(mirrored)/Left_Hand(mirrored)/Left_Finger0(mirrored)
-        weight: 1
-      - path: Left_Arm(mirrored)/Left_Hand(mirrored)/Left_Finger0(mirrored)/Left_Finger01(mirrored)
-        weight: 1
-      - path: Left_Arm(mirrored)/Left_Hand(mirrored)/Left_Finger1(mirrored)
-        weight: 1
-      - path: Left_Arm(mirrored)/Left_Hand(mirrored)/Left_Finger1(mirrored)/Left_Finger11(mirrored)
-        weight: 1
-      - path: Left_Arm(mirrored)/Left_Hand(mirrored)/Left_Finger2(mirrored)
-        weight: 1
-      - path: Left_Arm(mirrored)/Left_Hand(mirrored)/Left_Finger2(mirrored)/Left_Finger21(mirrored)
-        weight: 1
-      - path: Left_Arm(mirrored)/Left_Hand(mirrored)/Left_Finger3(mirrored)
-        weight: 1
-      - path: Left_Arm(mirrored)/Left_Hand(mirrored)/Left_Finger3(mirrored)/Left_Finger31(mirrored)
-        weight: 1
-      - path: Left_Arm(mirrored)/Left_Hand(mirrored)/Left_Finger4(mirrored)
-        weight: 1
-      - path: Left_Arm(mirrored)/Left_Hand(mirrored)/Left_Finger4(mirrored)/Left_Finger41(mirrored)
-        weight: 1
-      - path: Player_Camera
-        weight: 1
-      - path: RIght_Arm
-        weight: 1
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
+    clipAnimations: []
     isReadable: 1
   meshes:
     lODScreenPercentages: []

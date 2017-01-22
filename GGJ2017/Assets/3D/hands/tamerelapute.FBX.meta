@@ -1,0 +1,415 @@
+fileFormatVersion: 2
+guid: ade56a117450c554a96f84faf3818c6c
+timeCreated: 1485045545
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Left_Arm
+    100002: Left_Arm(mirrored)
+    100004: Left_Finger0
+    100006: Left_Finger0(mirrored)
+    100008: Left_Finger01
+    100010: Left_Finger01(mirrored)
+    100012: Left_Finger1
+    100014: Left_Finger1(mirrored)
+    100016: Left_Finger11
+    100018: Left_Finger11(mirrored)
+    100020: Left_Finger2
+    100022: Left_Finger2(mirrored)
+    100024: Left_Finger21
+    100026: Left_Finger21(mirrored)
+    100028: Left_Finger3
+    100030: Left_Finger3(mirrored)
+    100032: Left_Finger31
+    100034: Left_Finger31(mirrored)
+    100036: Left_Finger4
+    100038: Left_Finger4(mirrored)
+    100040: Left_Finger41
+    100042: Left_Finger41(mirrored)
+    100044: Left_Hand
+    100046: Left_Hand(mirrored)
+    100048: Player_Camera
+    100050: RIght_Arm
+    100052: //RootNode
+    400000: Left_Arm
+    400002: Left_Arm(mirrored)
+    400004: Left_Finger0
+    400006: Left_Finger0(mirrored)
+    400008: Left_Finger01
+    400010: Left_Finger01(mirrored)
+    400012: Left_Finger1
+    400014: Left_Finger1(mirrored)
+    400016: Left_Finger11
+    400018: Left_Finger11(mirrored)
+    400020: Left_Finger2
+    400022: Left_Finger2(mirrored)
+    400024: Left_Finger21
+    400026: Left_Finger21(mirrored)
+    400028: Left_Finger3
+    400030: Left_Finger3(mirrored)
+    400032: Left_Finger31
+    400034: Left_Finger31(mirrored)
+    400036: Left_Finger4
+    400038: Left_Finger4(mirrored)
+    400040: Left_Finger41
+    400042: Left_Finger41(mirrored)
+    400044: Left_Hand
+    400046: Left_Hand(mirrored)
+    400048: Player_Camera
+    400050: RIght_Arm
+    400052: //RootNode
+    4300000: RIght_Arm
+    7400000: TAMERELACHIENNE
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: RIght_Arm
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: TAMERELACHIENNE
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 20
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Left_Arm
+        weight: 1
+      - path: Left_Arm/Left_Hand
+        weight: 1
+      - path: Left_Arm/Left_Hand/Left_Finger0
+        weight: 1
+      - path: Left_Arm/Left_Hand/Left_Finger0/Left_Finger01
+        weight: 1
+      - path: Left_Arm/Left_Hand/Left_Finger1
+        weight: 1
+      - path: Left_Arm/Left_Hand/Left_Finger1/Left_Finger11
+        weight: 1
+      - path: Left_Arm/Left_Hand/Left_Finger2
+        weight: 1
+      - path: Left_Arm/Left_Hand/Left_Finger2/Left_Finger21
+        weight: 1
+      - path: Left_Arm/Left_Hand/Left_Finger3
+        weight: 1
+      - path: Left_Arm/Left_Hand/Left_Finger3/Left_Finger31
+        weight: 1
+      - path: Left_Arm/Left_Hand/Left_Finger4
+        weight: 1
+      - path: Left_Arm/Left_Hand/Left_Finger4/Left_Finger41
+        weight: 1
+      - path: Left_Arm(mirrored)
+        weight: 1
+      - path: Left_Arm(mirrored)/Left_Hand(mirrored)
+        weight: 1
+      - path: Left_Arm(mirrored)/Left_Hand(mirrored)/Left_Finger0(mirrored)
+        weight: 1
+      - path: Left_Arm(mirrored)/Left_Hand(mirrored)/Left_Finger0(mirrored)/Left_Finger01(mirrored)
+        weight: 1
+      - path: Left_Arm(mirrored)/Left_Hand(mirrored)/Left_Finger1(mirrored)
+        weight: 1
+      - path: Left_Arm(mirrored)/Left_Hand(mirrored)/Left_Finger1(mirrored)/Left_Finger11(mirrored)
+        weight: 1
+      - path: Left_Arm(mirrored)/Left_Hand(mirrored)/Left_Finger2(mirrored)
+        weight: 1
+      - path: Left_Arm(mirrored)/Left_Hand(mirrored)/Left_Finger2(mirrored)/Left_Finger21(mirrored)
+        weight: 1
+      - path: Left_Arm(mirrored)/Left_Hand(mirrored)/Left_Finger3(mirrored)
+        weight: 1
+      - path: Left_Arm(mirrored)/Left_Hand(mirrored)/Left_Finger3(mirrored)/Left_Finger31(mirrored)
+        weight: 1
+      - path: Left_Arm(mirrored)/Left_Hand(mirrored)/Left_Finger4(mirrored)
+        weight: 1
+      - path: Left_Arm(mirrored)/Left_Hand(mirrored)/Left_Finger4(mirrored)/Left_Finger41(mirrored)
+        weight: 1
+      - path: Player_Camera
+        weight: 1
+      - path: RIght_Arm
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human:
+    - boneName: Left_Hand
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Left_Finger4
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Left_Finger0
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Left_Finger41
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Left_Finger01
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Left_Finger1
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Left_Finger11
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Left_Finger11
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: tamerelapute(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Player_Camera
+      parentName: tamerelapute(Clone)
+      position: {x: -0, y: 0.15473732, z: -0.3107602}
+      rotation: {x: 0.06469753, y: 0.70398635, z: 0.06472576, w: 0.70429265}
+      scale: {x: 0.01, y: 0.01, z: 0.01}
+    - name: RIght_Arm
+      parentName: tamerelapute(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 0.01, y: 0.01, z: 0.01}
+    - name: Left_Arm(mirrored)
+      parentName: tamerelapute(Clone)
+      position: {x: 0.13312, y: -0.00219, z: -0.22899}
+      rotation: {x: -0.6993481, y: -0.034154024, z: 0.71391994, w: 0.00800156}
+      scale: {x: 0.010000001, y: 0.01, z: 0.01}
+    - name: Left_Hand(mirrored)
+      parentName: Left_Arm(mirrored)
+      position: {x: -30.447868, y: -0.0000009536743, z: 1.1574204}
+      rotation: {x: 0.27412647, y: -0.00903882, z: 0.18961638, w: 0.9427718}
+      scale: {x: 0.9999999, y: 1.0000002, z: 0.8847542}
+    - name: Left_Finger3(mirrored)
+      parentName: Left_Hand(mirrored)
+      position: {x: -8.337921, y: -0.94511604, z: -1.1859505}
+      rotation: {x: 0.014925484, y: -0.08762418, z: -0.075938284, w: 0.99314284}
+      scale: {x: 0.9999998, y: 0.9999999, z: 0.9999995}
+    - name: Left_Finger31(mirrored)
+      parentName: Left_Finger3(mirrored)
+      position: {x: -2.927557, y: 0.0000019073486, z: 0.000001013279}
+      rotation: {x: -0.04327849, y: -0.061900724, z: -0.45911133, w: 0.88516223}
+      scale: {x: 0.9999999, y: 1, z: 1.0000001}
+    - name: Left_Finger2(mirrored)
+      parentName: Left_Hand(mirrored)
+      position: {x: -8.650401, y: -1.0041142, z: 0.94133735}
+      rotation: {x: 0.0025553002, y: 0.049901728, z: -0.07752475, w: 0.99573755}
+      scale: {x: 0.9999997, y: 1.0000002, z: 1.2694286}
+    - name: Left_Finger21(mirrored)
+      parentName: Left_Finger2(mirrored)
+      position: {x: -3.8265858, y: 0, z: 0.0000023841858}
+      rotation: {x: -0.03059716, y: -0.041480813, z: -0.45203874, w: 0.8905078}
+      scale: {x: 1.0000002, y: 0.99999976, z: 0.99999994}
+    - name: Left_Finger0(mirrored)
+      parentName: Left_Hand(mirrored)
+      position: {x: -1.3315258, y: 1.027113, z: 3.0759146}
+      rotation: {x: -0.56436676, y: 0.5328139, z: 0.09949609, w: 0.62265563}
+      scale: {x: 1.0000001, y: 0.99999994, z: 0.9999995}
+    - name: Left_Finger01(mirrored)
+      parentName: Left_Finger0(mirrored)
+      position: {x: -4.3362455, y: 0, z: -0.0000023841858}
+      rotation: {x: -0.01212863, y: -0.028254503, z: -0.13899814, w: 0.98981524}
+      scale: {x: 0.9999999, y: 1, z: 1.0000001}
+    - name: Left_Finger1(mirrored)
+      parentName: Left_Hand(mirrored)
+      position: {x: -8.769729, y: -0.39303303, z: 3.0396073}
+      rotation: {x: -0.16661228, y: 0.22389014, z: -0.0073028198, w: 0.9602397}
+      scale: {x: 0.9999998, y: 0.9999996, z: 1}
+    - name: Left_Finger11(mirrored)
+      parentName: Left_Finger1(mirrored)
+      position: {x: -3.9081526, y: 0.0000019073486, z: -0.00000047683716}
+      rotation: {x: -0.012182214, y: -0.0026709195, z: -0.22136539, w: 0.9751112}
+      scale: {x: 1.0000002, y: 0.99999994, z: 1.0000004}
+    - name: Left_Finger4(mirrored)
+      parentName: Left_Hand(mirrored)
+      position: {x: -7.4035606, y: -0.31315136, z: -2.9905899}
+      rotation: {x: 0.018181786, y: -0.11499468, z: -0.10186357, w: 0.9879623}
+      scale: {x: 0.99999976, y: 1, z: 0.9999995}
+    - name: Left_Finger41(mirrored)
+      parentName: Left_Finger4(mirrored)
+      position: {x: -2.4680138, y: -0.0878067, z: -0.0000005364418}
+      rotation: {x: -0.055346627, y: -0.054715306, z: -0.40272155, w: 0.91200787}
+      scale: {x: 1.0000004, y: 1, z: 1.0000001}
+    - name: Left_Arm
+      parentName: tamerelapute(Clone)
+      position: {x: -0.13311704, y: -0.002187463, z: -0.22898583}
+      rotation: {x: 0.009593111, y: 0.69759524, z: 0.008334398, w: 0.71637934}
+      scale: {x: 0.01, y: 0.01, z: 0.01}
+    - name: Left_Hand
+      parentName: Left_Arm
+      position: {x: -30.447868, y: 0.00000028943788, z: 1.1574239}
+      rotation: {x: -0.28423107, y: 0.02317093, z: -0.13388403, w: 0.949079}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+    - name: Left_Finger3
+      parentName: Left_Hand
+      position: {x: -8.337925, y: 0.94511336, z: -1.1859524}
+      rotation: {x: -0.00998157, y: -0.1516891, z: 0.07674482, w: 0.9853939}
+      scale: {x: 1, y: 1.0000002, z: 1.0000001}
+    - name: Left_Finger31
+      parentName: Left_Finger3
+      position: {x: -2.9275553, y: -0.00000061488527, z: -0.00000031974855}
+      rotation: {x: 0.043067586, y: -0.062007066, z: 0.4620196, w: 0.88365054}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Left_Finger2
+      parentName: Left_Hand
+      position: {x: -8.650405, y: 1.0041136, z: 0.94133717}
+      rotation: {x: 0.0036155027, y: -0.02927479, z: 0.07769335, w: 0.99654084}
+      scale: {x: 0.99999976, y: 0.9999999, z: 1}
+    - name: Left_Finger21
+      parentName: Left_Finger2
+      position: {x: -3.8265831, y: -0.0000008297702, z: -0.00000037244286}
+      rotation: {x: 0.030597214, y: -0.04148085, z: 0.45203856, w: 0.89050794}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Left_Finger0
+      parentName: Left_Hand
+      position: {x: -1.3315302, y: -1.0271151, z: 3.0759168}
+      rotation: {x: 0.62441045, y: 0.6028126, z: 0.46179092, w: 0.18296945}
+      scale: {x: 1.0000005, y: 1.0000002, z: 0.9999998}
+    - name: Left_Finger01
+      parentName: Left_Finger0
+      position: {x: -4.336244, y: -0.0000016700435, z: -0.0000013934703}
+      rotation: {x: 0.006322117, y: 0.0259673, z: 0.34532177, w: 0.93810374}
+      scale: {x: 1.0000001, y: 1, z: 0.99999994}
+    - name: Left_Finger1
+      parentName: Left_Hand
+      position: {x: -8.769732, y: 0.3930322, z: 3.0396075}
+      rotation: {x: 0.16741556, y: 0.22188188, z: -0.3653575, w: 0.88839996}
+      scale: {x: 1, y: 0.9999998, z: 1}
+    - name: Left_Finger11
+      parentName: Left_Finger1
+      position: {x: -3.9081533, y: -0.0000009831185, z: -0.0000005423972}
+      rotation: {x: 0.01184025, y: -0.003917459, z: 0.32111195, w: 0.94695914}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Left_Finger4
+      parentName: Left_Hand
+      position: {x: -7.403564, y: 0.31314686, z: -2.9905925}
+      rotation: {x: -0.071788125, y: -0.5015488, z: 0.53676075, w: 0.6746727}
+      scale: {x: 0.99999976, y: 1, z: 0.99999994}
+    - name: Left_Finger41
+      parentName: Left_Finger4
+      position: {x: -2.4680123, y: 0.087809935, z: -0.00000062431315}
+      rotation: {x: 0.055187058, y: -0.054886773, z: 0.40566394, w: 0.9107023}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
