@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CameraEffect : MonoBehaviour {
 
@@ -8,11 +9,18 @@ public class CameraEffect : MonoBehaviour {
 	public Animator cameraanimator;
 	public Animator playeranimator;
 
+	public float waitDeathTime = 1.6f;
+	private float deathTimeLeft;
+	private bool startDeathTimer = false ;
+
+
+
 //	public GameObject Enemy;
 	// Use this for initialization
 	void Start () {
+		
 		cameraanimator.SetFloat("speed", 0);
-
+		deathTimeLeft = waitDeathTime;
 
 	}
 	void Update(){
@@ -21,11 +29,13 @@ public class CameraEffect : MonoBehaviour {
 			playeranimator.SetBool("Fire2",true);
 
 		}
+		/*
 		else {
 
 			playeranimator.SetBool("Fire2",false);
 
 		}
+		*/
 		if(Input.GetButtonDown("Fire1")){
 			playeranimator.SetBool("Fire1",true);
 		}
@@ -43,6 +53,16 @@ public class CameraEffect : MonoBehaviour {
 
 		}
 
+		if (startDeathTimer)
+		{
+			deathTimeLeft -= Time.deltaTime;
+			if(deathTimeLeft < 0)
+			{
+				Die();
+				deathTimeLeft = waitDeathTime;
+			}
+		}
+
 	}
 	
 	// Update is called once per frame
@@ -58,6 +78,24 @@ public class CameraEffect : MonoBehaviour {
 
 		}
 	}
+
+	// Update is called once per frame
+	void OnTriggerStay( Collider theCollision )
+	{
+
+		if (theCollision.gameObject.tag == "Enemy")
+			// By using {}, the condition apply to that entire scope, instead of the next line.
+		{ 
+			//Distance between player and enemy
+			float delta = Vector3.Distance(transform.position, theCollision.transform.position);
+			Debug.Log (delta);
+
+			if (delta < 1.6f) {
+				startDeathTimer = true;
+			}
+		}
+	}
+
 	void OnTriggerExit( Collider theCollision )
 	{
 
@@ -69,5 +107,10 @@ public class CameraEffect : MonoBehaviour {
 			playeranimator.SetBool("FEAR", false);
 
 		}
+	}
+
+	void Die()
+	{
+		SceneManager.LoadScene ("Scenes/GameOver");
 	}
 }

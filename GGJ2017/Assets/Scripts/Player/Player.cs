@@ -72,10 +72,10 @@ public class Player : MonoBehaviour {
 
 			//End of Spark Cooldown
 			if (sparkTimeLeft < 0) {
-
 				sparkTimeLeft = waitSparkTime;
 				startSparkTimer = false;
 				animator.SetBool ("SparkCoolDown",false);
+				animator.SetBool ("Fire2",false);
 			}
 		}
 			
@@ -95,7 +95,7 @@ public class Player : MonoBehaviour {
 		// SPARK
 		if (Input.GetButtonDown ("Fire2")) {
 
-			if (!startSparkTimer && !startHaloTimer && !IsAfraid()) {
+			if (!startSparkTimer && !IsAfraid()) {
 				//  Instantiate light object
 				Quaternion start_rot = Quaternion.Euler (new Vector3 (90, 0, 0));
 				Light halo_light = Instantiate (spark_prefab, transform.position + new Vector3 (0, 5, 0), start_rot);
@@ -105,6 +105,12 @@ public class Player : MonoBehaviour {
 				justSnapped = true;
 			}
 		}
+
+		if (Input.GetButtonUp ("Fire2")) 
+		{
+			animator.SetBool ("Fire2",false);
+		}
+			
 
 	}
 
@@ -119,13 +125,14 @@ public class Player : MonoBehaviour {
 
 	void OnTriggerStay(Collider collision)
 	{
-		if (collision.gameObject.tag == "key") {
+		if (collision.tag == "key") {
 
 			if (Input.GetKeyDown (KeyCode.E) && !IsAfraid()) {
 				hasKey = true;
 				Destroy (collision.gameObject);
 			}
 		}
+
 	}
 
 	void OnTriggerExit(Collider collision)
