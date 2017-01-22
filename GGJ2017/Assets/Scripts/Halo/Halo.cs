@@ -44,7 +44,8 @@ public class Halo : MonoBehaviour {
 		transform.localRotation = new_rot;
 	
 		Debug.Log(player.localRotation.eulerAngles.y +" "+ transform.localRotation.eulerAngles.y);
-	*/
+	   */
+
 		transform.position = player.position;
 
 		//enlarge halo over time

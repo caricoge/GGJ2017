@@ -8,7 +8,7 @@ public class Enemy : MonoBehaviour {
 	public Transform target;
 	NavMeshAgent nav_mesh;
 
-
+	public int detectDistance = 300;
 
 	//Timer to stop when touched by light
 	public float waitStopTime = 0.5f;
@@ -27,12 +27,12 @@ public class Enemy : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		nav_mesh.SetDestination (target.position);
-
+		/*
 		if (target.GetComponent<Player> ().justClapped) {
 			nav_mesh.Resume ();
 
 			Debug.Log ("go");
-		}
+		}*/
 			
 		if (startStopTimer) {
 			stopTimeLeft -= Time.deltaTime;
@@ -43,7 +43,32 @@ public class Enemy : MonoBehaviour {
 				Debug.Log ("Stop");
 
 			}
-		} 
+		}
+			
+	}
+
+	void FixedUpdate()
+	{
+		Collider[] colliders = Physics.OverlapSphere (transform.position, detectDistance);
+		int i = 0;
+		while (i < colliders.Length) 
+		{
+			if (colliders[i].tag == "Player")
+			{
+				Player player = colliders [i].GetComponent<Player> ();
+				if (player.justClapped || player.justSnapped) 
+				{
+					nav_mesh.Resume ();
+				}
+			}
+			i++;
+		}
+	}
+
+	void OnDrawGizmos()
+	{
+		Gizmos.color = Color.red;
+		Gizmos.DrawWireSphere (transform.position, detectDistance);
 	}
 
 	void OnTriggerEnter(Collider collision)

@@ -28,6 +28,12 @@ public class Player : MonoBehaviour {
 	public bool justClapped = false;
 	public bool justSnapped = false;
 
+	public GameObject match;
+
+	AudioSource audioSource;
+	public AudioClip clapSound;
+	public AudioClip matchSound;
+
 	// Use this for initialization
 	void Start () {
 
@@ -42,6 +48,12 @@ public class Player : MonoBehaviour {
 				animator = a;
 			}
 		}
+
+		animator.SetInteger ("Matches", matches);
+
+		match.SetActive(false);
+
+		audioSource = GetComponents<AudioSource> ()[1];
 
 	}
 	// Update is called once per frame
@@ -65,7 +77,7 @@ public class Player : MonoBehaviour {
 			}
 		}
 
-		//Spark
+		//Spark Timer
 		if (startSparkTimer) {
 
 			if (justSnapped) {
@@ -78,8 +90,11 @@ public class Player : MonoBehaviour {
 			if (sparkTimeLeft < 0) {
 				sparkTimeLeft = waitSparkTime;
 				startSparkTimer = false;
+
 				animator.SetBool ("SparkCoolDown",false);
 				animator.SetBool ("Fire2",false);
+
+				match.SetActive (false);
 			}
 		}
 			
@@ -93,6 +108,9 @@ public class Player : MonoBehaviour {
 
 				startHaloTimer = true;
 				justClapped = true;
+
+				audioSource.clip = clapSound;
+				audioSource.Play ();
 			}
 		}
 
@@ -100,17 +118,28 @@ public class Player : MonoBehaviour {
 		if (Input.GetButtonDown ("Fire2")) {
 			
 			// Matches
-			if (!startSparkTimer && !IsAfraid()) {
-				//  Instantiate light object
-				Quaternion start_rot = Quaternion.Euler (new Vector3 (90, 0, 0));
-				Instantiate (spark_prefab, transform.position + new Vector3 (0, 5, 0), start_rot);
-
-				startSparkTimer = true;
-				justSnapped = true;
-
+			if (!startSparkTimer && !IsAfraid())
+			{
 				// A match is used
 				matches--;
+				animator.SetInteger ("Matches", matches);
 
+				if (matches >= 0) 
+				{
+					//  Instantiate light object
+					//Quaternion start_rot = Quaternion.Euler (new Vector3 (90, 0, 0));
+					//GameObject match_light = Instantiate (matchPrefab, transform.position + new Vector3 (0, 5, 0), start_rot);
+
+					//match_light.transform.parent = matchParent;
+					match.SetActive (true);
+					startSparkTimer = true;
+					justSnapped = true;
+
+					audioSource.clip = matchSound;
+					audioSource.Play();
+
+
+				}
 
 			}
 		}
@@ -118,9 +147,9 @@ public class Player : MonoBehaviour {
 		if (Input.GetButtonUp ("Fire2")) 
 		{
 			animator.SetBool ("Fire2",false);
+			match.SetActive (false);
 		}
 			
-
 	}
 
 	void OnTriggerEnter(Collider collision)
@@ -160,6 +189,4 @@ public class Player : MonoBehaviour {
 	{
 		return hasKey;
 	}
-
-
 }
