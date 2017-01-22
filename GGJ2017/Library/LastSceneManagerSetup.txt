@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Scenes/WinScene.unity
-=======
-- path: Assets/Scenes/TestCharacter.unity
->>>>>>> 61e410734523bdf8812337f0eae255e70d5a040b
+- path: Assets/Scenes/TestInte.unity
   isLoaded: 1
   isActive: 1
