@@ -31,7 +31,7 @@ public class Door : MonoBehaviour {
 				
 				Player player = coll.GetComponent<Player> ();
 				Debug.Log (player.HasKey ());
-				if (player.HasKey () && !player.IsAfraid()) 
+				if (player.HasLever () && !player.IsAfraid()) 
 				{
 					animator.SetBool ("Activate", true);
 					Debug.Log ("Player");

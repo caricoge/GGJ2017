@@ -162,7 +162,7 @@ public class Player : MonoBehaviour {
 
 	void OnTriggerEnter(Collider collision)
 	{
-		if (collision.gameObject.tag == "key") {
+		if (collision.gameObject.tag == "key" || collision.gameObject.tag == "lever" || collision.gameObject.tag == "switch" || collision.gameObject.tag == "kedoory") {
 			
 			animator.SetBool ("CanGrab", true);
 
@@ -184,7 +184,7 @@ public class Player : MonoBehaviour {
 		{
 			if (Input.GetKeyDown (KeyCode.E) && !IsAfraid ()) {
 				hasLever = true;
-				GameObject lever = GameObject.Find ("Lever");
+				GameObject lever = GameObject.Find ("LeverUI");
 				lever.GetComponent<Image> ().enabled = true;
 				Destroy (collision.gameObject);
 			}
@@ -194,7 +194,7 @@ public class Player : MonoBehaviour {
 
 	void OnTriggerExit(Collider collision)
 	{
-		if (collision.gameObject.tag == "key") {
+		if (collision.gameObject.tag == "key" || collision.gameObject.tag == "lever" || collision.gameObject.tag == "switch" || collision.gameObject.tag == "kedoory") {
 			animator.SetBool ("CanGrab", false);
 		}
 	}
@@ -207,5 +207,10 @@ public class Player : MonoBehaviour {
 	public bool HasKey()
 	{
 		return hasKey;
+	}
+
+	public bool HasLever()
+	{
+		return hasLever;
 	}
 }
