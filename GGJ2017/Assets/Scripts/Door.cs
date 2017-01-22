@@ -28,10 +28,10 @@ public class Door : MonoBehaviour {
 			Debug.Log (coll.gameObject.tag);
 			if (coll.gameObject.tag == "Player")
 			{
-				Debug.Log ("Click");
+				
 				Player player = coll.GetComponent<Player> ();
-
-				if (player.HasKey () && !player.IsAfraid()) 
+				Debug.Log (player.HasKey ());
+				if (player.HasLever () && !player.IsAfraid()) 
 				{
 					animator.SetBool ("Activate", true);
 					Debug.Log ("Player");
