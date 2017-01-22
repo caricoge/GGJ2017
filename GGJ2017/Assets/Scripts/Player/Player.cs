@@ -38,6 +38,7 @@ public class Player : MonoBehaviour {
 
 	Matches matchUI;
 
+	Image actionUI;
 
 
 	// Use this for initialization
@@ -62,6 +63,8 @@ public class Player : MonoBehaviour {
 		audioSource = GetComponents<AudioSource> ()[1];
 
 		matchUI = FindObjectOfType<Matches> ();
+
+		actionUI = GameObject.Find ("ActionUI").GetComponent<Image>();
 
 	}
 	// Update is called once per frame
@@ -163,8 +166,8 @@ public class Player : MonoBehaviour {
 	void OnTriggerEnter(Collider collision)
 	{
 		if (collision.gameObject.tag == "key" || collision.gameObject.tag == "lever" || collision.gameObject.tag == "switch" || collision.gameObject.tag == "kedoory") {
-			
 			animator.SetBool ("CanGrab", true);
+			actionUI.enabled = true;
 
 		}
 	}
@@ -178,6 +181,7 @@ public class Player : MonoBehaviour {
 				//GameObject lever = GameObject.Find ("Lever");
 				//lever.GetComponent<Image> ().enabled = true;
 				Destroy (collision.gameObject);
+				actionUI.enabled = false;
 			}
 		} 
 		else if (collision.tag == "lever")
@@ -187,6 +191,7 @@ public class Player : MonoBehaviour {
 				GameObject lever = GameObject.Find ("LeverUI");
 				lever.GetComponent<Image> ().enabled = true;
 				Destroy (collision.gameObject);
+				actionUI.enabled = false;
 			}
 		}
 
@@ -194,8 +199,9 @@ public class Player : MonoBehaviour {
 
 	void OnTriggerExit(Collider collision)
 	{
-		if (collision.gameObject.tag == "key" || collision.gameObject.tag == "lever" || collision.gameObject.tag == "switch" || collision.gameObject.tag == "kedoory") {
+		if (collision.gameObject.tag == "key" || collision.gameObject.tag == "lever" || collision.gameObject.tag == "switch" || collision.gameObject.tag == "door") {
 			animator.SetBool ("CanGrab", false);
+			actionUI.enabled = false;
 		}
 	}
 
