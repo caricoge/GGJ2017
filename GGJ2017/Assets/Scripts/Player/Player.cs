@@ -9,6 +9,7 @@ public class Player : MonoBehaviour {
 	public Light spark_prefab;
 
 	bool hasKey = false;
+	bool hasLever = false;
 
 	Animator animator;
 
@@ -172,10 +173,19 @@ public class Player : MonoBehaviour {
 	{
 		if (collision.tag == "key") {
 
-			if (Input.GetKeyDown (KeyCode.E) && !IsAfraid()) {
+			if (Input.GetKeyDown (KeyCode.E) && !IsAfraid ()) {
 				hasKey = true;
+				//GameObject lever = GameObject.Find ("Lever");
+				//lever.GetComponent<Image> ().enabled = true;
+				Destroy (collision.gameObject);
+			}
+		} 
+		else if (collision.tag == "lever")
+		{
+			if (Input.GetKeyDown (KeyCode.E) && !IsAfraid ()) {
+				hasLever = true;
 				GameObject lever = GameObject.Find ("Lever");
-				lever.GetComponent<Image>().enabled = true;
+				lever.GetComponent<Image> ().enabled = true;
 				Destroy (collision.gameObject);
 			}
 		}

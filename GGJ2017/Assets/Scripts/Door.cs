@@ -28,9 +28,9 @@ public class Door : MonoBehaviour {
 			Debug.Log (coll.gameObject.tag);
 			if (coll.gameObject.tag == "Player")
 			{
-				Debug.Log ("Click");
+				
 				Player player = coll.GetComponent<Player> ();
-
+				Debug.Log (player.HasKey ());
 				if (player.HasKey () && !player.IsAfraid()) 
 				{
 					animator.SetBool ("Activate", true);
