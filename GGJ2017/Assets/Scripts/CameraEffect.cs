@@ -14,6 +14,7 @@ public class CameraEffect : MonoBehaviour {
 	private bool startDeathTimer = false ;
 
 
+	Player player;
 
 //	public GameObject Enemy;
 	// Use this for initialization
@@ -22,20 +23,21 @@ public class CameraEffect : MonoBehaviour {
 		cameraanimator.SetFloat("speed", 0);
 		deathTimeLeft = waitDeathTime;
 
+
 	}
 	void Update(){
 
 		if(Input.GetButtonDown("Fire2")){
+
 			playeranimator.SetBool("Fire2",true);
 
 		}
-		/*
+
 		else {
 
-			playeranimator.SetBool("Fire2",false);
+			//playeranimator.SetBool("Fire2",false);
 
 		}
-		*/
 		if(Input.GetButtonDown("Fire1")){
 			playeranimator.SetBool("Fire1",true);
 		}

@@ -1,13 +1,11 @@
 C:\Users\Administrateur.JMIN-L14142\Documents\GGJAM2017\GGJ2017\Temp\bin\Debug\Assembly-CSharp-firstpass.dll
 C:\Users\Administrateur.JMIN-L14142\Documents\GGJAM2017\GGJ2017\Temp\bin\Debug\Assembly-CSharp-firstpass.pdb
 C:\Users\Administrateur.JMIN-L14142\Documents\GGJAM2017\GGJ2017\Temp\bin\Debug\UnityEditor.dll
-C:\Users\Administrateur.JMIN-L14142\Documents\GGJAM2017\GGJ2017\Temp\bin\Debug\UnityEngine.Advertisements.dll
 C:\Users\Administrateur.JMIN-L14142\Documents\GGJAM2017\GGJ2017\Temp\bin\Debug\UnityEngine.Analytics.dll
 C:\Users\Administrateur.JMIN-L14142\Documents\GGJAM2017\GGJ2017\Temp\bin\Debug\UnityEngine.dll
 C:\Users\Administrateur.JMIN-L14142\Documents\GGJAM2017\GGJ2017\Temp\bin\Debug\UnityEngine.HoloLens.dll
 C:\Users\Administrateur.JMIN-L14142\Documents\GGJAM2017\GGJ2017\Temp\bin\Debug\UnityEngine.Networking.dll
 C:\Users\Administrateur.JMIN-L14142\Documents\GGJAM2017\GGJ2017\Temp\bin\Debug\UnityEngine.PlaymodeTestsRunner.dll
-C:\Users\Administrateur.JMIN-L14142\Documents\GGJAM2017\GGJ2017\Temp\bin\Debug\UnityEngine.Purchasing.dll
 C:\Users\Administrateur.JMIN-L14142\Documents\GGJAM2017\GGJ2017\Temp\bin\Debug\UnityEngine.UI.dll
 C:\Users\Administrateur.JMIN-L14142\Documents\GGJAM2017\GGJ2017\Temp\bin\Debug\UnityEngine.VR.dll
 C:\Users\Administrateur.JMIN-L14142\Documents\GGJAM2017\GGJ2017\Temp\bin\Debug\Mono.Cecil.dll
@@ -20,13 +18,11 @@ C:\Users\Administrateur.JMIN-L14142\Documents\GGJAM2017\GGJ2017\Temp\bin\Debug\M
 C:\Users\Administrateur.JMIN-L14142\Documents\GGJAM2017\GGJ2017\Temp\bin\Debug\Mono.Cecil.Mdb.dll
 C:\Users\Administrateur.JMIN-L14142\Documents\GGJAM2017\GGJ2017\Temp\bin\Debug\UnityEngine.xml
 C:\Users\Administrateur.JMIN-L14142\Documents\GGJAM2017\GGJ2017\Temp\bin\Debug\UnityEditor.xml
-C:\Users\Administrateur.JMIN-L14142\Documents\GGJAM2017\GGJ2017\Temp\bin\Debug\UnityEngine.Advertisements.xml
 C:\Users\Administrateur.JMIN-L14142\Documents\GGJAM2017\GGJ2017\Temp\bin\Debug\UnityEngine.UI.xml
 C:\Users\Administrateur.JMIN-L14142\Documents\GGJAM2017\GGJ2017\Temp\bin\Debug\UnityEngine.Networking.xml
 C:\Users\Administrateur.JMIN-L14142\Documents\GGJAM2017\GGJ2017\Temp\bin\Debug\UnityEngine.PlaymodeTestsRunner.xml
 C:\Users\Administrateur.JMIN-L14142\Documents\GGJAM2017\GGJ2017\Temp\bin\Debug\UnityEngine.Analytics.xml
 C:\Users\Administrateur.JMIN-L14142\Documents\GGJAM2017\GGJ2017\Temp\bin\Debug\UnityEngine.HoloLens.xml
-C:\Users\Administrateur.JMIN-L14142\Documents\GGJAM2017\GGJ2017\Temp\bin\Debug\UnityEngine.Purchasing.xml
 C:\Users\Administrateur.JMIN-L14142\Documents\GGJAM2017\GGJ2017\Temp\bin\Debug\UnityEngine.VR.xml
 C:\Users\Administrateur.JMIN-L14142\Documents\GGJAM2017\GGJ2017\obj\Debug\Assembly-CSharp-firstpass.csprojResolveAssemblyReference.cache
 C:\Users\Administrateur.JMIN-L14142\Documents\GGJAM2017\GGJ2017\obj\Debug\Assembly-CSharp-firstpass.dll
