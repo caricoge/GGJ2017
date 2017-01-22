@@ -1,12 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
 - path: Assets/scene_antoine.unity
-=======
-<<<<<<< HEAD
-- path: Assets/Scenes/FirstTry.unity
-=======
-- path: Assets/Scenes/WinScene.unity
->>>>>>> 3b25a5072027f1ca184c5f7f8ad97708f891b449
->>>>>>> 795ab7cffb4cfdf1ba8c6db0a247370e79cfae3b
   isLoaded: 1
   isActive: 1
