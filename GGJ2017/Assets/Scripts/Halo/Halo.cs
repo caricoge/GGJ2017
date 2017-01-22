@@ -17,23 +17,21 @@ public class Halo : MonoBehaviour {
 	bool startDestroyTimer = false;
 
 	// Use this for initialization
-	void Start () {
-
-		halo_light = GetComponent<Light> ();
-		halo_light.cookieSize = 0;
+	void Start () 
+	{
+		//halo_light = GetComponent<Light> ();
+		//halo_light.cookieSize = 0;
 		startDestroyTimer = true;
-
+		
 		//Init timer
 		destroyTimeLeft = waitDestroyTime;
 
 		player = FindObjectOfType<Player> ().transform;
 
 		lightTrigger = GetComponentInChildren<SphereCollider> ();
-		Vector3 pos = lightTrigger.transform.position;
-		pos.y = 0;
-		lightTrigger.transform.position = pos;
-
-
+		//Vector3 pos = lightTrigger.transform.position;
+		//pos.y = 0;
+		//lightTrigger.transform.position = pos;
 	}
 	
 	// Update is called once per frame
@@ -47,11 +45,15 @@ public class Halo : MonoBehaviour {
 	
 		Debug.Log(player.localRotation.eulerAngles.y +" "+ transform.localRotation.eulerAngles.y);
 	*/
+		transform.position = player.position;
+
 		//enlarge halo over time
-		halo_light.spotAngle += speed;
+		//halo_light.spotAngle += speed;
 		lightTrigger.radius += speed/100;
+		float coeff = speed/100 * Time.deltaTime;
+		transform.localScale += new Vector3(coeff,coeff,coeff);
 
-
+		Debug.Log (transform.localScale);
 		//Start counting before destroy
 		if (startDestroyTimer)
 		{
@@ -65,7 +67,5 @@ public class Halo : MonoBehaviour {
 				startDestroyTimer = false;
 			}
 		}
-
-
 	}
 }

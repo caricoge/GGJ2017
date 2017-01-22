@@ -4,17 +4,21 @@ using UnityEngine;
 
 public class Player : MonoBehaviour {
 
-	public Light halo_prefab;
+	public GameObject halo_prefab;
 	public Light spark_prefab;
 
 	bool hasKey = false;
 
 	Animator animator;
 
+	GameObject halo_shield;
+
 	// Small Spark cooldown
 	public float waitSparkTime = 3f;
 	private float sparkTimeLeft;
 	bool startSparkTimer = false;
+
+	int matches = 3;
 
 	// Big Halo cooldown
 	public float waitHaloTime = 3f;
@@ -83,9 +87,9 @@ public class Player : MonoBehaviour {
 		if (Input.GetButtonDown("Fire1")) {
 
 			if (!startHaloTimer && !IsAfraid()) {
-				//  Instantiate light object
+				// Instantiate light object
 				Quaternion start_rot = Quaternion.Euler (new Vector3 (90, 0, 0));
-				Light halo_light = Instantiate (halo_prefab, transform.position +new Vector3(0,5,0), start_rot);
+				Instantiate (halo_prefab, transform.position, start_rot);
 
 				startHaloTimer = true;
 				justClapped = true;
@@ -94,15 +98,20 @@ public class Player : MonoBehaviour {
 
 		// SPARK
 		if (Input.GetButtonDown ("Fire2")) {
-
+			
+			// Matches
 			if (!startSparkTimer && !IsAfraid()) {
 				//  Instantiate light object
 				Quaternion start_rot = Quaternion.Euler (new Vector3 (90, 0, 0));
-				Light halo_light = Instantiate (spark_prefab, transform.position + new Vector3 (0, 5, 0), start_rot);
-				Debug.Log (startSparkTimer);
+				Instantiate (spark_prefab, transform.position + new Vector3 (0, 5, 0), start_rot);
 
 				startSparkTimer = true;
 				justSnapped = true;
+
+				// A match is used
+				matches--;
+
+
 			}
 		}
 
