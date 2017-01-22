@@ -5,15 +5,13 @@ using UnityEngine.UI;
 
 public class Matches : MonoBehaviour {
 
-	public Sprite ThreeLeft;
-	public Sprite TwoLeft;
-	public Sprite OneLeft;
-
-	Image uiImage;
+	public Image MatchOne;
+	public Image MatchTwo;
+	public Image MatchThree;
 
 	// Use this for initialization
 	void Start () {
-		uiImage = GetComponent<Image> ();
+		//uiImage = GetComponent<Image> ();
 	}
 	
 	// Update is called once per frame
@@ -25,22 +23,27 @@ public class Matches : MonoBehaviour {
 	{
 		if (iVal == 3) 
 		{
-			uiImage.sprite = ThreeLeft;
-			uiImage.enabled = true;
+			MatchOne.enabled = true;
+			MatchTwo.enabled = true;
+			MatchThree.enabled = true;
 		} 
 		else if (iVal == 2) 
 		{
-			uiImage.sprite = TwoLeft;
-			uiImage.enabled = true;
+			MatchOne.enabled = false;
+			MatchTwo.enabled = true;
+			MatchThree.enabled = true;
 		} 
 		else if (iVal == 1) 
 		{
-			uiImage.sprite = ThreeLeft;
-			uiImage.enabled = true;
+			MatchOne.enabled = false;
+			MatchTwo.enabled = false;
+			MatchThree.enabled = true;
 		} 
 		else if (iVal == 0) 
 		{
-			uiImage.enabled = false;
+			MatchOne.enabled = false;
+			MatchTwo.enabled = false;
+			MatchThree.enabled = false;
 		}
 	}
 }

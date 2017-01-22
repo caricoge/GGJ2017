@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour {
 
@@ -34,6 +35,10 @@ public class Player : MonoBehaviour {
 	public AudioClip clapSound;
 	public AudioClip matchSound;
 
+	Matches matchUI;
+
+
+
 	// Use this for initialization
 	void Start () {
 
@@ -55,9 +60,12 @@ public class Player : MonoBehaviour {
 
 		audioSource = GetComponents<AudioSource> ()[1];
 
+		matchUI = FindObjectOfType<Matches> ();
+
 	}
 	// Update is called once per frame
-	void Update () {
+	void Update () 
+	{
 
 		//Halo Timer
 		if (startHaloTimer) {
@@ -123,7 +131,7 @@ public class Player : MonoBehaviour {
 				// A match is used
 				matches--;
 				animator.SetInteger ("Matches", matches);
-
+				matchUI.setMatchesLeft (matches);
 				if (matches >= 0) 
 				{
 					//  Instantiate light object
@@ -138,9 +146,7 @@ public class Player : MonoBehaviour {
 					audioSource.clip = matchSound;
 					audioSource.Play();
 
-
 				}
-
 			}
 		}
 
@@ -151,6 +157,7 @@ public class Player : MonoBehaviour {
 		}
 			
 	}
+
 
 	void OnTriggerEnter(Collider collision)
 	{
@@ -167,6 +174,8 @@ public class Player : MonoBehaviour {
 
 			if (Input.GetKeyDown (KeyCode.E) && !IsAfraid()) {
 				hasKey = true;
+				GameObject lever = GameObject.Find ("Lever");
+				lever.GetComponent<Image>().enabled = true;
 				Destroy (collision.gameObject);
 			}
 		}
